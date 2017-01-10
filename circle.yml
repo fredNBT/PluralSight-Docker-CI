@@ -5,7 +5,7 @@
 #  dockerhub:
 #    branch: master
 #    commands:
-#      - $DOCKER_HUB_TRIGGER
+#      curl -H "Content-Type: application/json" --data'{"build":true}' -X POST <https://registry.hub.docker.com/u/frednbt/pluralsight-docker-ci/trigger/7df23a8c-192d-48dc-846b-780bb94555fa/>
 
 test:
   override:    
